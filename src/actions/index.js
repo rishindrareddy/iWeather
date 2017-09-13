@@ -10,6 +10,10 @@ export function fetchWeather(city) {
   const url =  `${ROOT_URL}&q=${city}`;
   const req = axios.get(url);
 
+// req here is a promise, when redux-promise middleware receives this promise
+// it resolves the promise and send the result obtained to the reducer.
+// in simple terms, redux-promise is man in middle to resolve promises and send data to reducer.
+// COOL !!
   return {
     type: FETCH_WEATHER,
     payload: req
