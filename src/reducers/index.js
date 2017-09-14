@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import {weatherReducer} from './reducer_weather';
+import weatherReducer from './reducer_weather';
 
 // maps reducer_weather reducer to weather.
 // this is a centrl unit that manages reducers and maps to objects

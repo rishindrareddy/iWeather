@@ -9,12 +9,9 @@ export default function(state = [], action) {
     // we need to mutate the state in-place, we add new city search to the state
     // we return the updated state
     case FETCH_WEATHER:
-      // return [action.payload.data, ...state]
+      return [action.payload.data, ...state];
       // above is similar to below
-      return state.concat([action.payload.data]);
-
-      break;
-    default:
+      //return state.concat([action.payload.data]);
 
   }
   return state;
