@@ -5,7 +5,7 @@ class GoogleMap extends Component {
   // adding embedded google map
   componentDidMount() {
     new google.maps.Map(this.refs.map, {
-      zoom: 12,
+      zoom: 10,
       center: {
         lat: this.props.lat,
         lng: this.props.lon
