@@ -1,0 +1,7 @@
+notes to deploy app in heroku:
+
+1. make sure you run it locally and have no errors
+2. push code to heroku
+3. install npm packages
+4. run postinstall script
+5. start server.js
